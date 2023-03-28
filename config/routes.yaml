@@ -1,0 +1,30 @@
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+
+get:
+    path: '/users/{id}'
+    controller: App\Controller\UserController::get
+    methods: ['GET']
+put:
+    path: '/users/{id}'
+    controller: App\Controller\UserController::Put
+    methods: ['PUT']
+update:
+    path: '/users/{id}'
+    controller: App\Controller\UserController::patch
+    methods: ['PATCH']
+post:
+    path: '/users'
+    controller: App\Controller\UserController::post
+    methods: ['POST']
+delete:
+    path: '/users/{id}'
+    controller: App\Controller\UserController::delete
+    methods: ['DELETE']
+gets:
+    path: '/users'
+    controller: App\Controller\UserController::GetCollection
+    methods: ['GET']
